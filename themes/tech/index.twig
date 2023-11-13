@@ -1,10 +1,22 @@
+<link rel="stylesheet" href="{{ theme_url }}/css/index.css" type="text/css" />
+
 {% include 'incl/header.twig' %}
 
 <body>
     {% include 'incl/nav.twig' %}
 
     <div class="main" role="main">
-        {{ content }}
+        <div class="article">
+            <h1>Viktor Nordenberg</h1>
+            
+            <div class="article-img">
+                <img class="me-img" src="{{ base_url }}/assets/img/me.png" alt="" />
+            </div>
+
+            <div class="article-text">
+                {{ content }}
+            </div>
+        </div>
     </div>
     
     {% include 'incl/footer.twig' %}

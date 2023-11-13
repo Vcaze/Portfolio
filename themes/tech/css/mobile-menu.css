@@ -3,6 +3,10 @@
     transition: height 0.5s ease-in !important;
 }
 
+.nav {
+    padding-right: 10px;
+}
+
 .nav ul {
     display: flex;
     justify-content: flex-end;
@@ -15,7 +19,11 @@
 }
 
 .nav a, .nav-toggle {
-    color: #333;
+    color: #000;
+}
+
+.nav a:hover {
+    color:orange;
 }
 
 .nav-toggle {
