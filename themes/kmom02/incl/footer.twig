@@ -1,15 +1,17 @@
-<div class="container">
+<div class="footer">
+    <div>
+        <p></p>
+    </div>
     <div class="social">
         {% for social in pages["_meta"].meta.social %}
-            <a href="{{ social.url }}" title="{{ social.title }}" role="button">
-                <i class="{{ social.icon }}" aria-hidden="true"></i>
+        <div class=icon>
+            <a href="{{ social.url }}" title="{{ social.title }}" role="button" target="_blank">
+                <i class="{{ social.icon }}" aria-hidden="true" style="color: {{social.color}};"></i>
                 <span class="sr-only">{{ social.title }}</span>
             </a>
+        </div>
         {% endfor %}
     </div>
-    <p>dsbhadsbaj
-        En footer med lite text.
-    </p>
 </div>
 
 <script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>

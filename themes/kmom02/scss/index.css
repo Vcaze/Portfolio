@@ -1,0 +1,40 @@
+.article {
+  padding: 10px;
+}
+
+.article .article-img {
+  text-align: center;
+}
+
+.article .article-img .me-img {
+  width: 250px;
+  display: inline-block;
+}
+
+.article .article-text {
+  padding: 10px;
+}
+
+.article h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.article p {
+  padding-bottom: 16px;
+}
+
+.article h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .article h1 {
+    font-size: 28px;
+  }
+  .article h2 {
+    font-size: 22px;
+  }
+}
