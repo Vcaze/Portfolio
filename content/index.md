@@ -1,6 +1,6 @@
 ---
 Title: Hem
-Description: This is our index page.
+Description: This is the index page.
 ---
 
 ## Lite om mig
