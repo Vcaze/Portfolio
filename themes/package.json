@@ -9,8 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass kmom02/scss/style.scss kmom02/css/style.css --no-source-map && sass kmom02/scss/index.scss kmom02/css/index.css --no-source-map",
-    "style-min": "sass kmom02/scss/style.scss kmom02/css/style.min.css --no-source-map --style compressed && sass kmom02/scss/index.scss kmom02/css/index.min.css --no-source-map --style compressed"
+    "style": "sass --update kmom02/scss:kmom02/css --no-source-map",
+    "style-min": "sass kmom02/scss/*.scss kmom02/css/*.min.css --no-source-map --style compressed",
+    "publish-portfolio": "sass --update kmom02/scss:kmom02/css --no-source-map && dbwebb publishpure"
   },
   "keywords": [],
   "author": "",
