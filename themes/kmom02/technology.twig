@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="{{ theme_url }}/css/technology.css" type="text/css" />
+
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="wrapper">
+            <div class="sidebar-menu">
+                {% include 'incl/technologies-menu.twig' %}
+            </div>
+
+            <div class="technology">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

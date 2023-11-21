@@ -1,0 +1,66 @@
+/* technologies.scss */
+.landingpage {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px 100px 100px 100px;
+  margin: 0 auto;
+  gap: 1em 1em;
+}
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+.landingpage .grid-width-1 {
+  grid-column: span 1;
+}
+.landingpage .grid-width-2 {
+  grid-column: span 2;
+}
+.landingpage .grid-width-3 {
+  grid-column: span 3;
+}
+
+.landingpage .box {
+  height: 100px;
+  background-color: rgb(255, 165, 0);
+}
+.landingpage .box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4em;
+  border: 2px solid #000;
+}
+
+.landingpage .box:hover {
+  background-color: rgb(204, 133, 0);
+}
+
+@media (max-width: 767px) {
+  .landingpage {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: auto !important;
+    justify-content: center;
+    text-align: center;
+  }
+  .landingpage h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin: 0;
+    grid-column: span 1;
+  }
+  .landingpage .box {
+    width: 100%;
+    height: 0;
+    min-height: 40px;
+    grid-column: 1/1 !important;
+  }
+  .landingpage a {
+    padding: 0 !important;
+    font-size: 16px !important;
+  }
+}
