@@ -1,3 +1,5 @@
+@import 'variables';
+
 .slide {
     overflow-y: hidden !important;
     transition: height 0.5s ease-in !important;
@@ -19,11 +21,11 @@
 }
 
 .nav a, .nav-toggle {
-    color: rgb(0, 0, 0);
+    color: $black-on-orange;
 }
 
 .nav a:hover {
-    color: rgb(255, 255, 255);
+    color: $black-on-orange-hover;
 }
 
 .nav-toggle {

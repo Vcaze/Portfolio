@@ -44,6 +44,10 @@ body {
     height: 100%;
 }
 
+img, embed, object, video {
+    max-width: 100% !important;
+}
+
 /* Placement */
 
 body {
@@ -66,7 +70,8 @@ body {
 
 .header {
     background-color: $orange-color;
-    border-bottom: 2px solid $black-border-color;
+    border-bottom: 2px solid $border-to-orange-color;
+    color: $black-on-orange;
 }
 
 .header,
@@ -111,7 +116,7 @@ body {
 }
 
 .title * {
-    color: $black-border-color;
+    color: $black-on-orange;
 }
 
 .title p {
@@ -126,17 +131,13 @@ body {
 
 /* Nav */
 
-.nav .li a {
-    color: $orange-color;
-}
 
 /* Footer */
 
 .footer {
     min-height: 60px;
     display: flex;
-    justify-content: space-between;
-    border-top: 2px solid $black-border-color;
+    border-top: 2px solid $border-to-orange-color;
     background-color: $orange-color;
     padding: 10px;
 
@@ -145,12 +146,47 @@ body {
     }
 }
 
-.footer .social {
+.footer .first-col {
     font-size: 2rem;
     display: flex;
+    flex: 1;
+}
+
+.footer .actions {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex: 1;
 
     .icon {
         padding: 5px;
+    }
+
+    i {
+        color: $black-on-orange;
+    }
+
+    i:hover {
+        color: $black-on-orange-hover;
+    }
+}
+
+.footer .social {
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+
+    .icon {
+        padding: 5px;
+    }
+
+    i {
+        color: $black-on-orange;
+    }
+
+    i:hover {
+        color: var(--temp-hover-color);
     }
 }
 
@@ -181,10 +217,6 @@ h6 {
     font-family: 'Aboreto';
     margin-bottom: 0.6em;
     font-weight: bold;
-}
-
-img {
-    max-width: 100%;
 }
 
 h1 {

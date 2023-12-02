@@ -19,11 +19,11 @@
 }
 
 .nav a, .nav-toggle {
-  color: rgb(0, 0, 0);
+  color: #181818;
 }
 
 .nav a:hover {
-  color: rgb(255, 255, 255);
+  color: #303030;
 }
 
 .nav-toggle {

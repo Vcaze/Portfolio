@@ -1,0 +1,23 @@
+{% include 'incl/header.twig' %}
+
+<link rel="stylesheet" href="{{ theme_url }}/css/reports.css" type="text/css" />
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="reports">
+            {{ content }}
+
+            {% for report in pages["_meta"].meta.Reports %}
+            <div class="report">
+                <a href="analysis/{{ report.page }}" role="button">{{ report.kmom }} - {{ report.title }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

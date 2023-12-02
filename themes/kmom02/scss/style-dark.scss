@@ -1,0 +1,273 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables-dark'; /* Should be the only difference in this file compared to 'style' */
+@import 'blockquotes';
+@import 'code';
+
+/* Fonts & icons */
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+body {
+    background-color: $background-color;
+}
+
+* {
+    font-family: 'Noto Serif Balinese';
+    color: $font-color;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+/* Header */
+
+.header {
+    background-color: $orange-color;
+    border-bottom: 2px solid $border-to-orange-color;
+    color: $black-on-orange;
+}
+
+.header,
+.site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    width: 200px;
+    margin-left: 100px;
+}
+
+/* Title */
+
+.title,
+.logo {
+    padding: 0;
+}
+
+.title {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .title {
+        padding: 0;
+
+        h1 {
+            font-size: 22px;
+        }
+    }
+
+    .logo {
+        max-width: 30%;
+        margin-left: 0 !important;
+    }
+}
+
+.title * {
+    color: $black-on-orange;
+}
+
+.title p {
+    font-style: italic;
+}
+
+.title a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+/* Nav */
+
+
+/* Footer */
+
+.footer {
+    min-height: 60px;
+    display: flex;
+    border-top: 2px solid $border-to-orange-color;
+    background-color: $orange-color;
+    padding: 10px;
+
+    .a {
+        color: $font-color;
+    }
+}
+
+.footer .first-col {
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+}
+
+.footer .actions {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+    .icon {
+        padding: 5px;
+    }
+
+    i {
+        color: $black-on-orange;
+    }
+
+    i:hover {
+        color: $black-on-orange-hover;
+    }
+}
+
+.footer .social {
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+
+    .icon {
+        padding: 5px;
+    }
+
+    i {
+        color: $black-on-orange;
+    }
+
+    i:hover {
+        color: var(--temp-hover-color);
+    }
+}
+
+/* Typografy */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5rem;
+    color: $font-color;
+}
+
+p,
+td,
+th,
+li,
+dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Aboreto';
+    margin-bottom: 0.6em;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* article/md */
+
+.article {
+    padding: 10px;
+
+    .article-img {
+        text-align: center;
+    }
+
+    .article-text {
+        padding: 10px;
+        padding-top: 0;
+    }
+
+    h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    p {
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .article {
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .article-img {
+            .me-img {
+                max-width: 150px;
+            }
+        }
+    }
+}

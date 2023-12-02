@@ -11,21 +11,23 @@
   flex-grow: 1;
   flex-basis: 0;
   padding: 12px;
-  background-color: rgb(255, 165, 0);
-  border: 2px solid #000;
+  background-color: #FFA600;
+  border: 2px solid #181818;
 }
 .sidebar-menu h2 {
   font-size: 1.2em;
   padding-bottom: 12px;
   text-align: center;
+  color: #181818;
 }
 .sidebar-menu a {
-  color: #000;
+  color: #181818;
   margin: 3px 0;
   padding-left: 11px;
+  color: #181818;
 }
 .sidebar-menu a:hover {
-  color: rgb(59, 59, 59);
+  color: #303030;
 }
 
 .technology {

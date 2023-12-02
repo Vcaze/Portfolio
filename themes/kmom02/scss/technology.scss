@@ -1,4 +1,5 @@
 /* technology.scss */
+
 @import 'variables';
 
 .wrapper {
@@ -14,22 +15,24 @@
     flex-basis: 0;
     padding: 12px;
     background-color: $orange-color;
-    border: 2px solid $black-border-color;
+    border: 2px solid $border-to-orange-color;
 
     h2 {
         font-size: 1.2em;
         padding-bottom: 12px;
         text-align: center;
+        color: $black-on-orange;
     }
 
     a {
         color: $font-color;
         margin: 3px 0;
         padding-left: 11px;
+        color: $black-on-orange;
     }
 
     a:hover {
-        color: $black-hover-color;
+        color: $black-on-orange-hover;
     }
 }
 

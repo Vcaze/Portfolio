@@ -309,6 +309,7 @@ template {
   display: none;
 }
 
+/* Should be the only difference in this file compared to 'style' */
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -6461,12 +6462,12 @@ readers do not read off random characters that represent icons */
 
 /* Fonts */
 body {
-  background-color: #ffffff;
+  background-color: #181818;
 }
 
 * {
   font-family: "Noto Serif Balinese";
-  color: #181818;
+  color: #b2b2b2;
 }
 
 * {
@@ -6488,10 +6489,6 @@ ul {
 html,
 body {
   height: 100%;
-}
-
-img, embed, object, video {
-  max-width: 100% !important;
 }
 
 /* Placement */
@@ -6579,7 +6576,7 @@ body {
   padding: 10px;
 }
 .footer .a {
-  color: #181818;
+  color: #b2b2b2;
 }
 
 .footer .first-col {
@@ -6624,7 +6621,7 @@ body {
 body {
   font-family: sans-serif;
   line-height: 1.5rem;
-  color: #181818;
+  color: #b2b2b2;
 }
 
 p,
@@ -6646,6 +6643,10 @@ h6 {
   font-family: "Aboreto";
   margin-bottom: 0.6em;
   font-weight: bold;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1 {
