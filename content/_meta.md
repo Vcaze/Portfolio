@@ -14,4 +14,21 @@ Social:
       url: https://discordapp.com/users/288416472273780747
       icon: fab fa-discord
       color: '#7289da'
+Actions:
+    - title: Dark mode
+      url: '?action=theme'
+      icon: fas fa-moon
+    - title: Destroy Session
+      url: '?action=session_destroy'
+      icon: fas fa-trash-alt
+Reports:
+    - kmom: kmom04
+      title: Analys av färgschema och typografi
+      page: 01_colors
+    - kmom: kmom05
+      title: Laddningstid och användbarhet på hemsidor för TV-kanalers streamningstjänster
+      page: 02_load
+    - kmom: kmom06
+      title:
+      page: 03_design_principles
 ---
