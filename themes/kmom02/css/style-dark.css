@@ -6491,6 +6491,10 @@ body {
   height: 100%;
 }
 
+img, embed, object, video {
+  max-width: 100% !important;
+}
+
 /* Placement */
 body {
   display: flex;
@@ -6645,10 +6649,6 @@ h6 {
   font-weight: bold;
 }
 
-img {
-  max-width: 100%;
-}
-
 h1 {
   font-size: 2em;
   text-align: center;
@@ -6663,8 +6663,7 @@ h1 {
   text-align: center;
 }
 .article .article-text {
-  padding: 10px;
-  padding-top: 0;
+  padding: 0;
 }
 .article h1 {
   text-align: center;

@@ -1,0 +1,50 @@
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.arena-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        display: inline-block;
+    }
+}
+
+.edward-blom-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    iframe {
+        width: 580px;
+        height: calc(580px * 0.5625);
+    }
+
+    @media (max-width: 600px) {
+        iframe {
+            width: 400px;
+            height: calc(400px * 0.5625);
+        }
+    }
+
+    @media (max-width: 479px) {
+        iframe {
+            width: 300px;
+            height: calc(300px * 0.5625);
+        }
+    }
+}

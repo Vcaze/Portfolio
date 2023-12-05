@@ -6461,7 +6461,7 @@ readers do not read off random characters that represent icons */
 
 /* Fonts */
 body {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 * {
@@ -6662,8 +6662,7 @@ h1 {
   text-align: center;
 }
 .article .article-text {
-  padding: 10px;
-  padding-top: 0;
+  padding: 0;
 }
 .article h1 {
   text-align: center;
